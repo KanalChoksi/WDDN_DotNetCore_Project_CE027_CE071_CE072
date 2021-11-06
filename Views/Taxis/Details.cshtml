@@ -1,0 +1,54 @@
+﻿@model Texi_Booking.Models.Taxi
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+  
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Taxiname)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Taxiname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Taxinumer)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Taxinumer)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TaxiDescription)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TaxiDescription)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RentPerKm)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RentPerKm)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.image)
+        </dt>
+        <dd class="col-sm-10">
+            <img style="width:400px; " src="data:image;base64,@Convert.ToBase64String(Model.image)" />
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.status)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
