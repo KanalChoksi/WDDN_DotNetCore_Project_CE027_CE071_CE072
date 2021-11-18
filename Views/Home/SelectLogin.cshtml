@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "SelectLogin";
+}
+
+<h1>SelectLogin</h1>
+
+
+
+
+<div class="container">
+
+    <div class="row g-8 text-center" id="btn">
+
+        <div class="col" id="col1">
+            <a asp-controller="Admin" asp-action="Login">
+                <h2 id="link">
+                    Sign In as Admin
+                    <i class="bi bi-arrow-right text-dark"></i>
+                </h2>
+            </a>
+        </div>
+        <div class="col" id="col2">
+            <a asp-controller="Customer" asp-action="CustomerLogin">
+                <h2 id="link1">
+                    Sign In to Ride
+                    <i class="bi bi-arrow-right"></i>
+                </h2>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+

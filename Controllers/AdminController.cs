@@ -10,11 +10,58 @@ namespace Texi_Booking.Controllers
 {
     public class AdminController : Controller
     {
+        private readonly DataBaseContext _db;
+        public AdminController(DataBaseContext db)
+        {
+            _db = db;
+        }
+
         public IActionResult Login()
         {
             
             return View();
         }
+
+
+        [HttpGet]
+        public IActionResult AddDriver()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult AddDriver(Driver driver)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.drivers.Add(driver);
+                _db.SaveChanges();
+
+                return RedirectToAction("Index","Home");
+            }
+            return View(driver);
+        }
+
+
+        [HttpGet]
+        public IActionResult AddCity()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult AddCity(City city)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.cities.Add(city);
+                _db.SaveChanges();
+
+                return RedirectToAction("Index", "Home");
+            }
+            return View(city);
+        }
+
+
+
         [HttpPost]
         public IActionResult Login(AdminLogin admin)
         {
@@ -26,7 +73,7 @@ namespace Texi_Booking.Controllers
                         HttpContext.Session.SetString("Username", admin.Username);
                         return RedirectToAction("Index","Taxis");
                     }
-                    ViewBag.Message = "Username or password may incorect";
+                    ViewBag.Message = "Username or password may incorrect";
                     return View();
                 }
                 return View();

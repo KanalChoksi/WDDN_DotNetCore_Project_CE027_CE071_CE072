@@ -11,3 +11,128 @@
         <input type="submit" value="Customer Login" class="btn btn-primary" />&nbsp;
     </a>
 </div>
+
+
+ @*<%-- Ride Button--%>*@
+
+
+<section class="bg-dark text-light p-5 text-center text-sm-start">
+    <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+            <div>
+                <h1>Become a <span class="text-warning">TaxiCab Customer</span></h1>
+                <p class="lead my-4">We provide you safe drive We have ensured every covid protocols Choose TaxiCab and make youe journey Memorable</p>
+                <a asp-controller="Booking" asp-action="Book" class="btn btn-secondary" style="position: absolute">Choose A Ride</a>
+            </div>
+            <img class="img-fluid w-50 d-none d-sm-block" src="image\image4.jpg" alt="">
+        </div>
+    </div>
+</section>
+  @*  <%-- About Us --%>*@
+
+<div id="about">
+    <section class="p-5" id="abt1">
+        <div class="row m-3 mb-0">
+            <div class="col">
+                <img src="image\image2.jpg" class="img-fluid" />
+            </div>
+            <div class="col p-5">
+                <h2>TaxiCab Rental</h2>
+                <p class="lead">
+                    Rent our taxies with affordable prices for your vacations
+                </p>
+                <a href="#" class="btn btn-light mt-3">
+                    Read More
+                    <i class="bi bi-chevron-right text-dark"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="p-5" id="abt2">
+        <div class="row m-3 mt-0">
+            <div class="col p-5">
+                <h2>
+                    Intercity Rides
+                </h2>
+                <p class="lead">
+                    Book our cab for Intercity Rides
+                </p>
+                <a href="#" class="btn btn-light mt-3">
+                    Read More
+                    <i class="bi bi-chevron-right text-dark"></i>
+                </a>
+            </div>
+            <div class="col">
+                <img src="image\image1.jpg" class="img-fluid" />
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
+
+  @*  <%-- Frequently asked questions --%>*@
+
+<section class="p-5" id="questions">
+    <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush">
+            <!-- Item 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-one">
+                        How to choose ride?
+                    </button>
+                </h2>
+                <div id="question-one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                     data-bs-parent="questions">
+                    <div class="accordion-body">
+                        Press Choose Ride Button then enter your location and destination it will redirect you to payment and after some time taxi will be at your home
+                    </div>
+
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-two">
+                        How can I Pay?
+                    </button>
+                </h2>
+                <div id="question-two" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                     data-bs-parent="questions">
+                    <div class="accordion-body">
+                        You can pay through Debit Card, Paytm, G-pay
+                    </div>
+
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-three">
+                        How do I Login?
+                    </button>
+                </h2>
+                <div id="question-three" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                     data-bs-parent="questions">
+                    <div class="accordion-body">
+                        You can login via login page and if you don't have an account first create your account and then login.
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</section>
+

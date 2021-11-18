@@ -20,5 +20,8 @@ namespace Texi_Booking.Models
 
         public DbSet<Taxi> Taxi { get; set; }
         public DbSet<TempPhoto> Photo { get; set; }
+        public DbSet<Driver> drivers { get; set; }
+        public DbSet<City> cities { get; set; }
+        public DbSet<BookTaxi> bookTaxis { get; set; }
     }
 }

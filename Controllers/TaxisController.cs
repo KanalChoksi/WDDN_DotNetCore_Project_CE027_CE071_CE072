@@ -37,7 +37,7 @@ namespace Texi_Booking.Controllers
             if (id == null)
             {
                 return RedirectToAction("Index");
-                return NotFound();
+                //return NotFound();
             }
 
             var taxi = await _context.Taxi

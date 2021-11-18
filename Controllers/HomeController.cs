@@ -18,6 +18,11 @@ namespace Texi_Booking.Controllers
             _logger = logger;
         }
 
+        public IActionResult SelectLogin()
+        {
+            return View();
+        }
+
         public IActionResult Index()
         {
             return View();
