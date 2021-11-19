@@ -1,4 +1,5 @@
-﻿@model Texi_Booking.Models.Driver
+﻿
+@model Texi_Booking.Models.Driver
 @{
     Layout = null;
 }
@@ -10,10 +11,17 @@
     <meta name="viewport" content="width=device-width" />
     <title>AddDriver</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        #class{
+            margin-left:200px;
+            margin-top:100px;
+            
+        }
+    </style>
 </head>
 <body>
 
-    <div class="row">
+    <div class="row w-25" id="class">
         <div class="col-md-12">
             <form method="post">
                 <div asp-validation-summary="All" class="text-danger"></div>
@@ -31,8 +39,8 @@
                     <label asp-for="Address"></label>
                     <input asp-for="Address" class="form-control" />
                     <span asp-validation-for="Address" class="text-danger"></span>
-                </div>
-                <button type="submit" class="btn btn-primary">Register Driver</button>
+                </div><br />
+                <button type="submit" class="btn btn-secondary"> Driver</button>
             </form>
         </div>
     </div>

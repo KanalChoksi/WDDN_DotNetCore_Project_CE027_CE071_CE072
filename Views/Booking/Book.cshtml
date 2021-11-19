@@ -1,16 +1,24 @@
 ﻿@model Texi_Booking.Models.BookTaxi
-@{
-    ViewData["Title"] = "Book";
-}
-
-<h1>Book</h1>
 
 
-<div class="row">
-    <div class="col-md-12">
-       
+
+
+
+<html>
+<head>
+    <style>
+        #class {
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row w-25" id="class">
+        <div class="col-md-12">
+
             <div asp-validation-summary="All" class="text-danger"></div>
-            
+
 
             <div class="row">
                 <div class="col-md-12">
@@ -18,39 +26,45 @@
                         <div asp-validation-summary="All" class="text-danger"></div>
                         <div class="form-group">
                             <label asp-for="Source"></label>
-                            <select asp-for="ID" asp-items="@(new SelectList(@ViewBag.message,"Id","Cities"))">
-
-                            </select>
+                            @*<select asp-for="Source" asp-items="@(new SelectList(@ViewBag.message,"Id","Cities"))" class="form-control">
+                            </select>*@
+                            <input  asp-for="Source" class="form-control"/>
                             <span asp-validation-for="Source" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <label asp-for="Destination"></label>
-                            <select asp-for="ID" asp-items="@(new SelectList(@ViewBag.message,"Id","Cities"))"></select>
-                                <span asp-validation-for="Destination" class="text-danger"></span>
-</div>
+                          @*  <select asp-for="Destination" asp-items="@(new SelectList(@ViewBag.message,"Id","Cities"))" class="form-control"></select>*@
+                        <input asp-for="Destination" class="form-control" />
+                            <span asp-validation-for="Destination" class="text-danger"></span>
+                        </div>
                         <div class="form-group">
                             <label asp-for="Carname"></label>
-                            <select>
-                                <option>Innova</option>
-                            </select>
+                            @*<select class="form-control" asp-for="Carname">
+            <option>Innova</option>
+            <option>Wagon R</option>
+            <option>Tata Nano</option>
+        </select>*@
+                            <input asp-for="Carname" class="form-control" />
                             <span asp-validation-for="Carname" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <label asp-for="Date"></label>
-                            <input asp-for="Date" class="form-control" type="date"/>
+                            <input asp-for="Date" class="form-control" />
                             <span asp-validation-for="Date" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <label asp-for="Time"></label>
-                            <input asp-for="Time" class="form-control" type="time"/>
+                            <input asp-for="Time" class="form-control" type="time" />
                             <span asp-validation-for="Time" class="text-danger"></span>
                         </div>
-                        <button type="submit" class="btn btn-primary">Book Taxi</button>
+                        <button type="submit" class="btn btn-secondary">Book Taxi</button>
 
                     </form>
                 </div>
             </div>
-   
+
+        </div>
     </div>
-</div>
+</body>
+</html>
 

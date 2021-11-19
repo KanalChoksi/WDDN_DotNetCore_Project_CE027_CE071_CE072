@@ -35,16 +35,23 @@ namespace Texi_Booking.Controllers
             
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Book(BookTaxi obj)
         {
             if (ModelState.IsValid)
             {
                 _context.bookTaxis.Add(obj);
                 _context.SaveChanges();
-
-                return RedirectToAction("Index","Home");
+                
+               return RedirectToAction("Booked","Booking");
             }
             return View(obj);
+        }
+
+
+        public IActionResult Booked()
+        {
+            return View();
         }
     }
 }

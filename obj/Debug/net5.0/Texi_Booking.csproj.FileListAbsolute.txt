@@ -465,3 +465,5 @@ C:\Users\Arun\Desktop\Sem 5\WDDN\Assignment_core\WDDN_DotNetCore_Project_CE027_C
 C:\Users\Arun\Desktop\Sem 5\WDDN\Assignment_core\WDDN_DotNetCore_Project_CE027_CE071_CE072\obj\Debug\net5.0\Razor\Views\Admin\AddCity.cshtml.g.cs
 C:\Users\Arun\Desktop\Sem 5\WDDN\Assignment_core\WDDN_DotNetCore_Project_CE027_CE071_CE072\obj\Debug\net5.0\Razor\Views\Booking\Book.cshtml.g.cs
 C:\Users\Arun\Desktop\Sem 5\WDDN\Assignment_core\WDDN_DotNetCore_Project_CE027_CE071_CE072\obj\Debug\net5.0\Razor\Views\Home\SelectLogin.cshtml.g.cs
+C:\Users\Arun\Desktop\Sem 5\WDDN\Assignment_core\WDDN_DotNetCore_Project_CE027_CE071_CE072\obj\Debug\net5.0\Razor\Views\Booking\Booked.cshtml.g.cs
+C:\Users\Arun\Desktop\Sem 5\WDDN\Assignment_core\WDDN_DotNetCore_Project_CE027_CE071_CE072\obj\Debug\net5.0\Razor\Views\Admin\citylist.cshtml.g.cs

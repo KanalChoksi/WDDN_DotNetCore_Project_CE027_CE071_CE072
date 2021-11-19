@@ -36,11 +36,15 @@ namespace Texi_Booking.Controllers
                 _db.drivers.Add(driver);
                 _db.SaveChanges();
 
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("Index","Taxis");
             }
             return View(driver);
         }
 
+        public IActionResult citylist()
+        {
+            return View();
+        }
 
         [HttpGet]
         public IActionResult AddCity()
@@ -55,7 +59,7 @@ namespace Texi_Booking.Controllers
                 _db.cities.Add(city);
                 _db.SaveChanges();
 
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Taxis");
             }
             return View(city);
         }
